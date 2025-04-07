@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Rodriguez Chumacero - Portafolio</title>
+  <!-- Fuente desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset general y fuente principal */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Fondo con gradiente y estilo general del body */
+    body {
+      background: linear-gradient(135deg, #1f1c2c, #928DAB);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    /* Estilos del encabezado */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeInDown 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffe7;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    /* Estilos generales para las secciones */
+    section {
+      width: 100%;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    h2 {
+      color: #00ffe7;
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      margin-left: 20px;
+    }
+
+    /* Estilo para redes sociales */
+    .social {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social a {
+      color: #00ffe7;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    /* Animaciones para dar vida al sitio */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estilos de tarjeta para proyectos con efecto hover */
+    .proyecto {
+      background-color: rgba(255,255,255,0.05);
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .proyecto:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00ffe7;
+    }
+
+    /* Responsive para móviles */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado con nombre y descripción -->
+  <header>
+    <h1>Diego Rodriguez Chumacero</h1>
+    <p>Ayudante de Programador | Apasionado por la tecnología y el aprendizaje</p>
+  </header>
+
+  <!-- Sección sobre mí -->
+  <section>
+    <h2>Sobre mí</h2>
+    <p>“Soy un joven entusiasta del mundo de la programación, con conocimientos básicos en desarrollo web y muchas ganas de aprender y crecer profesionalmente. Me gusta.”</p>
+  </section>
+
+  <!-- Sección de habilidades técnicas -->
+  <section>
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML (básico)</li>
+      <li>Java (básico)</li>
+      <li>C# (básico)</li>
+    </ul>
+  </section>
+
+  <!-- Sección de proyectos, se puede cambiar el contenido luego -->
+  <section>
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <h3>Proyecto de ejemplo</h3>
+      <p>Una muestra de cómo podría verse un proyecto. Puedes reemplazar esto más adelante con tus propios trabajos.</p>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section class="social">
+    <h2>Contacto</h2>
+    <p>Sígueme en Instagram:</p>
+    <a href="https://instagram.com/Diego_Rodch" target="_blank">@Diego_Rodch</a>
+  </section>
+</body>
+</html>
